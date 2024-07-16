@@ -1,0 +1,11 @@
+C:\Users\user\Desktop\Proyecto Jerngibre\Proyecto-Jengibre\Proyecto-Jengibre\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\user\Desktop\Proyecto Jerngibre\Proyecto-Jengibre\Proyecto-Jengibre\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\user\Desktop\Proyecto Jerngibre\Proyecto-Jengibre\Proyecto-Jengibre\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\user\Desktop\Proyecto Jerngibre\Proyecto-Jengibre\Proyecto-Jengibre\CapaNegocio\bin\Debug\CapaEntidad.dll
+C:\Users\user\Desktop\Proyecto Jerngibre\Proyecto-Jengibre\Proyecto-Jengibre\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\user\Desktop\Proyecto Jerngibre\Proyecto-Jengibre\Proyecto-Jengibre\CapaNegocio\bin\Debug\CapaEntidad.pdb
+C:\Users\user\Desktop\Proyecto Jerngibre\Proyecto-Jengibre\Proyecto-Jengibre\CapaNegocio\obj\Debug\CapaNegocio.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\Proyecto Jerngibre\Proyecto-Jengibre\Proyecto-Jengibre\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Proyecto Jerngibre\Proyecto-Jengibre\Proyecto-Jengibre\CapaNegocio\obj\Debug\CapaNego.81B9D119.Up2Date
+C:\Users\user\Desktop\Proyecto Jerngibre\Proyecto-Jengibre\Proyecto-Jengibre\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\user\Desktop\Proyecto Jerngibre\Proyecto-Jengibre\Proyecto-Jengibre\CapaNegocio\obj\Debug\CapaNegocio.pdb

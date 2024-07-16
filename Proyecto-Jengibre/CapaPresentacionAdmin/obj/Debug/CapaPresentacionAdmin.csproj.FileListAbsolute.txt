@@ -84,3 +84,9 @@ C:\Users\user\Desktop\Proyecto Jerngibre\Proyecto-Jengibre\Proyecto-Jengibre\Cap
 C:\Users\user\Desktop\Proyecto Jerngibre\Proyecto-Jengibre\Proyecto-Jengibre\CapaPresentacionAdmin\obj\Debug\CapaPres.0D5CB2CD.Up2Date
 C:\Users\user\Desktop\Proyecto Jerngibre\Proyecto-Jengibre\Proyecto-Jengibre\CapaPresentacionAdmin\obj\Debug\CapaPresentacionAdmin.dll
 C:\Users\user\Desktop\Proyecto Jerngibre\Proyecto-Jengibre\Proyecto-Jengibre\CapaPresentacionAdmin\obj\Debug\CapaPresentacionAdmin.pdb
+C:\Users\user\Desktop\Proyecto Jerngibre\Proyecto-Jengibre\Proyecto-Jengibre\CapaPresentacionAdmin\bin\CapaEntidad.dll
+C:\Users\user\Desktop\Proyecto Jerngibre\Proyecto-Jengibre\Proyecto-Jengibre\CapaPresentacionAdmin\bin\CapaNegocio.dll
+C:\Users\user\Desktop\Proyecto Jerngibre\Proyecto-Jengibre\Proyecto-Jengibre\CapaPresentacionAdmin\bin\CapaDatos.dll
+C:\Users\user\Desktop\Proyecto Jerngibre\Proyecto-Jengibre\Proyecto-Jengibre\CapaPresentacionAdmin\bin\CapaEntidad.pdb
+C:\Users\user\Desktop\Proyecto Jerngibre\Proyecto-Jengibre\Proyecto-Jengibre\CapaPresentacionAdmin\bin\CapaNegocio.pdb
+C:\Users\user\Desktop\Proyecto Jerngibre\Proyecto-Jengibre\Proyecto-Jengibre\CapaPresentacionAdmin\bin\CapaDatos.pdb
