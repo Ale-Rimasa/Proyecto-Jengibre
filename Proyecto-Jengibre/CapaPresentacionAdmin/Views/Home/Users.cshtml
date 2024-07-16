@@ -16,7 +16,7 @@
     <div class="card-body">
         <div class="row">
             <div class="col-12">
-                <button type="button" class="btn btn-success">Crear Nuevo</button>
+                <button type="button" class="btn btn-success" onclick="OpenModal()">Crear Nuevo</button>
             </div>
         </div>
         <hr />
@@ -39,49 +39,80 @@
 
 </div>
 
+
+<!-- Modal -->
+<div class="modal fade" id="FormModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-dark text-white">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Usuario</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body g-2">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label for="textNames" class="form-label">Nombres</label>
+                        <input type="text" class="form-control" id="textNames">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="txtSurnames" class="form-label">Apellidos</label>
+                        <input type="text" class="form-control" id="txtSurnames">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="txtEmail" class="form-label">Correo</label>
+                        <input type="email" class="form-control" id="txtEmail" placeholder="name@example.com">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="cboActive" class="form-label">Activo</label>
+                        <select id="cboActive" class="form-select" >
+                            <option value="1">Si</option>
+                            <option value="0">No</option>
+                        </select>
+                    </div>
+
+                   
+
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 @section scripts{
-
-    var tabladata;
-
-
     <script>
-        jQuery.ajax({
 
-        url: '@Url.Action("ListUseers", "Home")',
-        type: "GET",
-        dataType: "json",
-            contentType: "application/json; charset=utf-8",
-            success: function (data) {
-                var Texto1= "Hola soy el texto 1"
-                console.log(data)
-            }
-
-        })
+        var tabladata;
 
         tabladata = $("#table").DataTable({
-        responsive: true,
-        ordering: false,
-        "ajax": {
-              url: '@Url.Action("ListUseers", "Home")',
-              type: "GET",
-              dataType: "json"
+            responsive: true,
+            ordering: false,
+            "ajax": {
+                url: '@Url.Action("ListUseers", "Home")',
+                type: "GET",
+                dataType: "json"
             },
             "columns": [
-                { "data":"NameUser"},
-                { "data":"SurnameUser"},
-                { "data":"Mail"},
+                { "data": "NameUser" },
+                { "data": "SurnameUser" },
+                { "data": "Mail" },
                 {
                     "data": "Active", "render": function (valor) {
-                        if(valor) {
+                        if (valor) {
                             return '<span class="badge text-bg-success">Si</span>'
-                        }else {
+                        } else {
                             return '<span class="badge text-bg-danger">No</span>'
-                    }
+                        }
 
                     }
                 },
                 {
-                    "defaultContent": '<button type="button" class="btn btn-primary btn-sm"><i class="fas fa-pen me-1"></i></button>' +
+                    "defaultContent": '<button type="button" class="btn btn-primary btn-sm btn-editar"><i class="fas fa-pen me-1"></i></button>' +
                         '<button type="button" class="btn btn-danger btn-sm ms-2"><i class="fas fa-trash me-1"></i></button>',
                     "orderable": false,
                     "searchable": false,
@@ -90,8 +121,25 @@
                 }
 
 
-            ]
+            ],
+            "language": {
+                "url": "https://cdn.datatables.net/plug-ins/2.0.8/i18n/es-AR.json"
+            }
+
+        });
+
+        function OpenModal() {
+            $("#FormModal").modal("show");
+        }
+
+        $("#table tbody").on("click", '.btn-editar', function () {
+
+            var RowSelected = $(this).closest("tr");
+            var data = tabladata.row(RowSelected).data();
+
+            alert("Hola")
         })
+
     </script>
 
 
