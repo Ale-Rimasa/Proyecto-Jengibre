@@ -6,14 +6,18 @@ using System.Web.Mvc;
 
 namespace CapaPresentacionAdmin.Controllers
 {
-    public class HomeController : Controller
+    public class MantenedorController : Controller
     {
-        public ActionResult Index()
+        // GET: Mantenedor
+        public ActionResult Category()
         {
             return View();
         }
-
-        public ActionResult Users()
+        public ActionResult Mark()
+        {
+            return View();
+        }
+        public ActionResult Product()
         {
             return View();
         }
