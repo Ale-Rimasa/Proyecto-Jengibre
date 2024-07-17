@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -26,6 +27,24 @@ namespace CapaPresentacionAdmin.Controllers
             oList = new CN_Useers().List();
 
             return Json(new { data = oList },JsonRequestBehavior.AllowGet); 
+        }
+        [HttpPost]
+        public JsonResult SaveUseers(Useer objeto) //Va a guardar y editar un usuario este metodo
+        {
+            object result; //Este tipo de dato almacena un string, entero o cualquier otro valor.
+            string menssaje = string.Empty;
+
+            if(objeto.ID_User == 0)
+            {
+
+                result = new CN_Useers().Register(objeto, out menssaje);
+            }
+            else
+            {
+                result = new CN_Useers().Edit(objeto, out menssaje);
+            }
+
+            return Json(new { result = result, menssaje }, JsonRequestBehavior.AllowGet);
         }
     }
 }

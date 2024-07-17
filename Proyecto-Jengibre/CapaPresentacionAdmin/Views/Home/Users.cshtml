@@ -67,13 +67,13 @@
                     </div>
                     <div class="col-sm-6">
                         <label for="cboActive" class="form-label">Activo</label>
-                        <select id="cboActive" class="form-select" >
+                        <select id="cboActive" class="form-select">
                             <option value="1">Si</option>
                             <option value="0">No</option>
                         </select>
                     </div>
 
-                   
+
 
 
                 </div>
@@ -163,26 +163,58 @@
         function Save() {
 
             var User = { //Creamos nuestro objeto usuario
+
                 ID_User: $("#txtID").val(),
                 NameUser: $("#txtNames").val(),
                 SurnameUser: $("#txtSurnames").val(),
                 Mail: $("#txtEmail").val(),
                 Active: $("#cboActive").val() == 1 ? true : false,
-                
+
             }
 
-            if (User.ID_User == 0) {
-                tabladata.row.add(User).draw(false);
+            jQuery.ajax({
+                url: '@Url.Action("SaveUseers", "Home")', //Metodo que va a ejecutar y desde donde
+                type: "POST",
+                data: JSON.stringify({ objeto: User }), //Convierte a texto
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function (data) {              //Data: representa = { resultado = result, menssaje }
+                    
+                    //Usuario Nuevo
+                    if (User.ID_User == 0) {
 
-            } else {
-                tabladata.row(RowSelected).data(User).draw(false);
-                
-            }
-            $("#FormModal").modal("hide");
+                        if (data.result != 0) {
+
+                            User.ID_User = data.result;
+                            tabladata.row.add(User).draw(false);
+                            $("#FormModal").modal("hide");
+                        }
+                        else {
+                            alert(data.menssaje)
+                        }
+
+
+                    }
+                    else {
+                        tabladata.row(RowSelected).data(User).draw(false);
+
+                    }
+
+                },
+                error: function (error) {
+
+                },
+                beforeSend: function () {
+
+                }
+            });
+
+          
+
         }
 
 
     </script>
-     
+
 
 }

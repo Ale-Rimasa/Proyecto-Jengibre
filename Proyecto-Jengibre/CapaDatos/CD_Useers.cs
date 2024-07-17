@@ -71,7 +71,7 @@ namespace CapaDatos
                     cmd.Parameters.AddWithValue("Clave", obj.Clave);
                     cmd.Parameters.AddWithValue("Active", obj.Active);
                     cmd.Parameters.Add("Result", SqlDbType.Int).Direction = ParameterDirection.Output;
-                    cmd.Parameters.Add("Message", SqlDbType.VarChar, 500).Direction = ParameterDirection.Output;
+                    cmd.Parameters.Add("Mensaje", SqlDbType.VarChar, 500).Direction = ParameterDirection.Output;
                     cmd.CommandType = CommandType.StoredProcedure;
 
                     oconection.Open();
@@ -79,7 +79,7 @@ namespace CapaDatos
                     cmd.ExecuteNonQuery();
 
                     idAutogenerate = Convert.ToInt32(cmd.Parameters["Result"].Value);
-                    Menssage = cmd.Parameters["Message"].Value.ToString();
+                    Menssage = cmd.Parameters["Mensaje"].Value.ToString();
 
                 }
             }

@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\Proyecto Jerngibre\\Proyecto-Jengibre\\Proyecto-Jengibre\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{612DF4A6-B915-4B18-963F-739A7248A55B}|CapaDatos\\CapaDatos.csproj|c:\\users\\user\\desktop\\proyecto jerngibre\\proyecto-jengibre\\proyecto-jengibre\\capadatos\\cd_useers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{612DF4A6-B915-4B18-963F-739A7248A55B}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\cd_useers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CBFAE5A-1243-4F8A-9D0B-5F4F63ABA81B}|CapaPresentacionAdmin\\CapaPresentacionAdmin.csproj|c:\\users\\user\\desktop\\proyecto jerngibre\\proyecto-jengibre\\proyecto-jengibre\\capapresentacionadmin\\views\\home\\users.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1CBFAE5A-1243-4F8A-9D0B-5F4F63ABA81B}|CapaPresentacionAdmin\\CapaPresentacionAdmin.csproj|solutionrelative:capapresentacionadmin\\views\\home\\users.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1CBFAE5A-1243-4F8A-9D0B-5F4F63ABA81B}|CapaPresentacionAdmin\\CapaPresentacionAdmin.csproj|c:\\users\\user\\desktop\\proyecto jerngibre\\proyecto-jengibre\\proyecto-jengibre\\capapresentacionadmin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1CBFAE5A-1243-4F8A-9D0B-5F4F63ABA81B}|CapaPresentacionAdmin\\CapaPresentacionAdmin.csproj|solutionrelative:capapresentacionadmin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -47,12 +55,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "CD_Useers.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Proyecto Jerngibre\\Proyecto-Jengibre\\Proyecto-Jengibre\\CapaDatos\\CD_Useers.cs",
+              "RelativeDocumentMoniker": "CapaDatos\\CD_Useers.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Proyecto Jerngibre\\Proyecto-Jengibre\\Proyecto-Jengibre\\CapaDatos\\CD_Useers.cs",
+              "RelativeToolTip": "CapaDatos\\CD_Useers.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAADsAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T17:13:44.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Users.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Proyecto Jerngibre\\Proyecto-Jengibre\\Proyecto-Jengibre\\CapaPresentacionAdmin\\Views\\Home\\Users.cshtml",
+              "RelativeDocumentMoniker": "CapaPresentacionAdmin\\Views\\Home\\Users.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Proyecto Jerngibre\\Proyecto-Jengibre\\Proyecto-Jengibre\\CapaPresentacionAdmin\\Views\\Home\\Users.cshtml",
+              "RelativeToolTip": "CapaPresentacionAdmin\\Views\\Home\\Users.cshtml",
+              "ViewState": "AQIAAKIAAAAAAAAAAAAAALUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-17T12:11:07.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\Proyecto Jerngibre\\Proyecto-Jengibre\\Proyecto-Jengibre\\CapaPresentacionAdmin\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "CapaPresentacionAdmin\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\Proyecto Jerngibre\\Proyecto-Jengibre\\Proyecto-Jengibre\\CapaPresentacionAdmin\\Controllers\\HomeController.cs",
               "RelativeToolTip": "CapaPresentacionAdmin\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAABIAAAAJAAAA",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAACAAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-17T03:59:17.261Z",
               "EditorCaption": ""
