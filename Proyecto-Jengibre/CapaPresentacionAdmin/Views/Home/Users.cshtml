@@ -48,23 +48,27 @@
                 <h1 class="modal-title fs-5" id="exampleModalLabel">Usuario</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body g-2">
+            <div class="modal-body ">
 
                 <input type="text" id="txtID" value="0" />
 
-                <div class="row">
+                <div class="row g-2">
+
                     <div class="col-sm-6">
                         <label for="txtNames" class="form-label">Nombres</label>
-                        <input type="text" class="form-control" id="txtNames">
+                        <input type="text" class="form-control" id="txtNames" autocomplete="off">
                     </div>
+
                     <div class="col-sm-6">
                         <label for="txtSurnames" class="form-label">Apellidos</label>
-                        <input type="text" class="form-control" id="txtSurnames">
+                        <input type="text" class="form-control" id="txtSurnames" autocomplete="off">
                     </div>
+
                     <div class="col-sm-6">
                         <label for="txtEmail" class="form-label">Correo</label>
-                        <input type="email" class="form-control" id="txtEmail" placeholder="name@example.com">
+                        <input type="email" class="form-control" id="txtEmail" placeholder="name@example.com" autocomplete="off">
                     </div>
+
                     <div class="col-sm-6">
                         <label for="cboActive" class="form-label">Activo</label>
                         <select id="cboActive" class="form-select">
@@ -73,10 +77,16 @@
                         </select>
                     </div>
 
-
-
-
                 </div>
+
+                <div class="row mt-2">
+                    <div class="col-12">
+                        <div  id="menssageError" class="alert alert-danger" role="alert">
+                            A simple danger alert—check it out!
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -133,11 +143,14 @@
         });
 
         function OpenModal(json) {
+
             $("#txtID").val(0)
             $("#txtNames").val("") //Me va a limpiar los valores 1ro
             $("#txtSurnames").val("")
             $("#txtEmail").val("")
             $("#cboActive").val(1);
+
+            $("#menssageError").hide();
 
 
             if (json != null) {
@@ -179,7 +192,7 @@
                 dataType: "json",
                 contentType: "application/json; charset=utf-8",
                 success: function (data) {              //Data: representa = { resultado = result, menssaje }
-                    
+                    debugger;
                     //Usuario Nuevo
                     if (User.ID_User == 0) {
 
@@ -190,13 +203,25 @@
                             $("#FormModal").modal("hide");
                         }
                         else {
-                            alert(data.menssaje)
+                            $("#menssageError").text(data.menssaje);
+                            $("#menssageError").show();
                         }
 
 
                     }
+                    //Editar Usuario
                     else {
-                        tabladata.row(RowSelected).data(User).draw(false);
+                        if (data.result) {
+
+                            tabladata.row(RowSelected).data(User).draw(false);
+                            RowSelected = null;
+                            $("#FormModal").modal("hide");
+                        }
+                        else {
+                            $("#menssageError").text(data.menssaje);
+                            $("#menssageError").show();
+                        }
+
 
                     }
 
@@ -209,7 +234,7 @@
                 }
             });
 
-          
+
 
         }
 

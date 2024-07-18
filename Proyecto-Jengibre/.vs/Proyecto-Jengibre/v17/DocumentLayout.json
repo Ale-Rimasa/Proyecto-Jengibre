@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\Proyecto Jerngibre\\Proyecto-Jengibre\\Proyecto-Jengibre\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1CBFAE5A-1243-4F8A-9D0B-5F4F63ABA81B}|CapaPresentacionAdmin\\CapaPresentacionAdmin.csproj|C:\\Users\\user\\Desktop\\Proyecto Jerngibre\\Proyecto-Jengibre\\Proyecto-Jengibre\\capapresentacionadmin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CBFAE5A-1243-4F8A-9D0B-5F4F63ABA81B}|CapaPresentacionAdmin\\CapaPresentacionAdmin.csproj|solutionrelative:capapresentacionadmin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB14CECC-8ECC-4E73-849F-61960F5305BD}|CapaNegocio\\CapaNegocio.csproj|c:\\users\\user\\desktop\\proyecto jerngibre\\proyecto-jengibre\\proyecto-jengibre\\capanegocio\\cn_useers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB14CECC-8ECC-4E73-849F-61960F5305BD}|CapaNegocio\\CapaNegocio.csproj|solutionrelative:capanegocio\\cn_useers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{612DF4A6-B915-4B18-963F-739A7248A55B}|CapaDatos\\CapaDatos.csproj|c:\\users\\user\\desktop\\proyecto jerngibre\\proyecto-jengibre\\proyecto-jengibre\\capadatos\\cd_useers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{612DF4A6-B915-4B18-963F-739A7248A55B}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\cd_useers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1CBFAE5A-1243-4F8A-9D0B-5F4F63ABA81B}|CapaPresentacionAdmin\\CapaPresentacionAdmin.csproj|c:\\users\\user\\desktop\\proyecto jerngibre\\proyecto-jengibre\\proyecto-jengibre\\capapresentacionadmin\\views\\home\\users.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1CBFAE5A-1243-4F8A-9D0B-5F4F63ABA81B}|CapaPresentacionAdmin\\CapaPresentacionAdmin.csproj|solutionrelative:capapresentacionadmin\\views\\home\\users.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1CBFAE5A-1243-4F8A-9D0B-5F4F63ABA81B}|CapaPresentacionAdmin\\CapaPresentacionAdmin.csproj|c:\\users\\user\\desktop\\proyecto jerngibre\\proyecto-jengibre\\proyecto-jengibre\\capapresentacionadmin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CBFAE5A-1243-4F8A-9D0B-5F4F63ABA81B}|CapaPresentacionAdmin\\CapaPresentacionAdmin.csproj|solutionrelative:capapresentacionadmin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +26,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Users.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Proyecto Jerngibre\\Proyecto-Jengibre\\Proyecto-Jengibre\\CapaPresentacionAdmin\\Views\\Home\\Users.cshtml",
+              "RelativeDocumentMoniker": "CapaPresentacionAdmin\\Views\\Home\\Users.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Proyecto Jerngibre\\Proyecto-Jengibre\\Proyecto-Jengibre\\CapaPresentacionAdmin\\Views\\Home\\Users.cshtml",
+              "RelativeToolTip": "CapaPresentacionAdmin\\Views\\Home\\Users.cshtml",
+              "ViewState": "AQIAALcAAAAAAAAAAAAAALoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-17T12:11:07.127Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Proyecto Jerngibre\\Proyecto-Jengibre\\Proyecto-Jengibre\\CapaPresentacionAdmin\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "CapaPresentacionAdmin\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Proyecto Jerngibre\\Proyecto-Jengibre\\Proyecto-Jengibre\\CapaPresentacionAdmin\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "CapaPresentacionAdmin\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAAAC8AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T03:59:17.261Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -54,41 +86,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CD_Useers.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Proyecto Jerngibre\\Proyecto-Jengibre\\Proyecto-Jengibre\\CapaDatos\\CD_Useers.cs",
-              "RelativeDocumentMoniker": "CapaDatos\\CD_Useers.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Proyecto Jerngibre\\Proyecto-Jengibre\\Proyecto-Jengibre\\CapaDatos\\CD_Useers.cs",
-              "RelativeToolTip": "CapaDatos\\CD_Useers.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAADsAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T17:13:44.979Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Users.cshtml",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Proyecto Jerngibre\\Proyecto-Jengibre\\Proyecto-Jengibre\\CapaPresentacionAdmin\\Views\\Home\\Users.cshtml",
-              "RelativeDocumentMoniker": "CapaPresentacionAdmin\\Views\\Home\\Users.cshtml",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Proyecto Jerngibre\\Proyecto-Jengibre\\Proyecto-Jengibre\\CapaPresentacionAdmin\\Views\\Home\\Users.cshtml",
-              "RelativeToolTip": "CapaPresentacionAdmin\\Views\\Home\\Users.cshtml",
-              "ViewState": "AQIAAKIAAAAAAAAAAAAAALUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-17T12:11:07.127Z",
+              "Title": "CN_Useers.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Proyecto Jerngibre\\Proyecto-Jengibre\\Proyecto-Jengibre\\CapaNegocio\\CN_Useers.cs",
+              "RelativeDocumentMoniker": "CapaNegocio\\CN_Useers.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Proyecto Jerngibre\\Proyecto-Jengibre\\Proyecto-Jengibre\\CapaNegocio\\CN_Useers.cs",
+              "RelativeToolTip": "CapaNegocio\\CN_Useers.cs",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAtwE8AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-18T17:22:42.154Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Proyecto Jerngibre\\Proyecto-Jengibre\\Proyecto-Jengibre\\CapaPresentacionAdmin\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "CapaPresentacionAdmin\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Proyecto Jerngibre\\Proyecto-Jengibre\\Proyecto-Jengibre\\CapaPresentacionAdmin\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "CapaPresentacionAdmin\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAACAAAAAIAAAA",
+              "Title": "CD_Useers.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Proyecto Jerngibre\\Proyecto-Jengibre\\Proyecto-Jengibre\\CapaDatos\\CD_Useers.cs",
+              "RelativeDocumentMoniker": "CapaDatos\\CD_Useers.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Proyecto Jerngibre\\Proyecto-Jengibre\\Proyecto-Jengibre\\CapaDatos\\CD_Useers.cs",
+              "RelativeToolTip": "CapaDatos\\CD_Useers.cs",
+              "ViewState": "AQIAAHEAAAAAAAAAAAAtwH4AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T03:59:17.261Z",
+              "WhenOpened": "2024-07-18T17:20:48.938Z",
               "EditorCaption": ""
             }
           ]

@@ -44,7 +44,7 @@ namespace CapaPresentacionAdmin.Controllers
                 result = new CN_Useers().Edit(objeto, out menssaje);
             }
 
-            return Json(new { result = result, menssaje }, JsonRequestBehavior.AllowGet);
+            return Json(new { result = result, menssaje = menssaje }, JsonRequestBehavior.AllowGet);
         }
     }
 }

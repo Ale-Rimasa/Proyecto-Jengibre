@@ -100,14 +100,13 @@ namespace CapaDatos
                 using (SqlConnection oconection = new SqlConnection(Conection.cn))
                 {
                     SqlCommand cmd = new SqlCommand("sp_EditUser", oconection);
-                    cmd.Parameters.AddWithValue("@ID_User", obj.ID_User);
+                    cmd.Parameters.AddWithValue("ID_User", obj.ID_User);
                     cmd.Parameters.AddWithValue("NameUser", obj.NameUser);
                     cmd.Parameters.AddWithValue("SurnameUser", obj.SurnameUser);
                     cmd.Parameters.AddWithValue("Mail", obj.Mail);
-                    cmd.Parameters.AddWithValue("Clave", obj.Clave);
                     cmd.Parameters.AddWithValue("Active", obj.Active);
                     cmd.Parameters.Add("Result", SqlDbType.Bit).Direction = ParameterDirection.Output;
-                    cmd.Parameters.Add("Message", SqlDbType.VarChar, 500).Direction = ParameterDirection.Output;
+                    cmd.Parameters.Add("Mensaje", SqlDbType.VarChar, 500).Direction = ParameterDirection.Output;
                     cmd.CommandType = CommandType.StoredProcedure;
 
                     oconection.Open();
@@ -115,7 +114,7 @@ namespace CapaDatos
                     cmd.ExecuteNonQuery();
 
                     result = Convert.ToBoolean(cmd.Parameters["Result"].Value);
-                    Menssage = cmd.Parameters["Message"].Value.ToString();
+                    Menssage = cmd.Parameters["Mensaje"].Value.ToString();
 
                 }
             }
