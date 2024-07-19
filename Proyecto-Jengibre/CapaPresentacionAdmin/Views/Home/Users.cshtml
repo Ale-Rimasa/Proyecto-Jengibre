@@ -81,7 +81,7 @@
 
                 <div class="row mt-2">
                     <div class="col-12">
-                        <div  id="menssageError" class="alert alert-danger" role="alert">
+                        <div id="menssageError" class="alert alert-danger" role="alert">
                             A simple danger alert—check it out!
                         </div>
                     </div>
@@ -126,8 +126,8 @@
                     }
                 },
                 {
-                    "defaultContent": '<button type="button" class="btn btn-primary btn-sm btn-editar"><i class="fas fa-pen me-1"></i></button>' +
-                        '<button type="button" class="btn btn-danger btn-sm ms-2"><i class="fas fa-trash me-1"></i></button>',
+                    "defaultContent": '<button type="button" class="btn btn-primary btn-sm btn-edit"><i class="fas fa-pen me-1"></i></button>' +
+                        '<button type="button" class="btn btn-danger btn-sm ms-2 btn-eliminate"><i class="fas fa-trash me-1"></i></button>',
                     "orderable": false,
                     "searchable": false,
                     "width": "90px"
@@ -163,15 +163,61 @@
             $("#FormModal").modal("show");
         }
 
-        $("#table tbody").on("click", '.btn-editar', function () {
+        $("#table tbody").on("click", '.btn-edit', function () {
 
             RowSelected = $(this).closest("tr");
             var data = tabladata.row(RowSelected).data();
-            console.log(data)
 
             OpenModal(data)
         })
 
+        $("#table tbody").on("click", '.btn-eliminate', function () {
+
+            var UserSelected = $(this).closest("tr");
+            var data = tabladata.row(UserSelected).data();
+
+            swal({
+                title: "Esta seguro?",
+                text: "Desea eliminar el usuario?",
+                type: "warning",
+                showCancelButton: true,
+                confirmButtonClass: "btn-primary",
+                confirmButtonText: "Si",
+                cancelButtonText: "No",
+                closeOnConfirm: true
+
+            },
+                function () {
+
+                jQuery.ajax({
+                url: '@Url.Action("EliminateUseers", "Home")', //Metodo que va a ejecutar y desde donde
+                type: "POST",
+                data: JSON.stringify({ id: data.ID_User }), //Convierte a texto
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function (data) {              //Data: representa = { resultado = result, menssaje }
+                    debbuger;
+
+                    if (data.result) {
+
+                        tabladata.row(UserSelected).remove().draw();
+                    }
+                    else {
+                        swal("No se puede eliminar", data.menssaje, "Error")
+                    }
+                },
+                error: function (error) {
+                   console.log(error)
+;                },
+
+            });
+
+        });
+
+
+
+            console.log(data)
+        })
 
         function Save() {
 
@@ -192,7 +238,8 @@
                 dataType: "json",
                 contentType: "application/json; charset=utf-8",
                 success: function (data) {              //Data: representa = { resultado = result, menssaje }
-                    debugger;
+
+                    $("modal-body").LoadingOverlay("hide");
                     //Usuario Nuevo
                     if (User.ID_User == 0) {
 
@@ -221,21 +268,23 @@
                             $("#menssageError").text(data.menssaje);
                             $("#menssageError").show();
                         }
-
-
                     }
-
                 },
                 error: function (error) {
+                    $("modal-body").LoadingOverlay("hide");
 
-                },
-                beforeSend: function () {
+                    $("#menssageError").text("Error Ajax");
 
+                    $("#menssageError").show();
+;                },
+                beforeSend: function () { //Va a realizar algo mientras se ejecuta el metodo llamado
+                    $(".modal-body").LoadingOverlay("show", {
+                        imageResizeFactor: 2,
+                        text: "Cargando..",
+                        size: 14
+                    })
                 }
             });
-
-
-
         }
 
 

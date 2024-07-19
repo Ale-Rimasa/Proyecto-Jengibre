@@ -26,7 +26,7 @@ namespace CapaPresentacionAdmin.Controllers
             List<Useer> oList = new List<Useer>();
             oList = new CN_Useers().List();
 
-            return Json(new { data = oList },JsonRequestBehavior.AllowGet); 
+            return Json(new { data = oList }, JsonRequestBehavior.AllowGet);
         }
         [HttpPost]
         public JsonResult SaveUseers(Useer objeto) //Va a guardar y editar un usuario este metodo
@@ -34,7 +34,7 @@ namespace CapaPresentacionAdmin.Controllers
             object result; //Este tipo de dato almacena un string, entero o cualquier otro valor.
             string menssaje = string.Empty;
 
-            if(objeto.ID_User == 0)
+            if (objeto.ID_User == 0)
             {
 
                 result = new CN_Useers().Register(objeto, out menssaje);
@@ -45,6 +45,17 @@ namespace CapaPresentacionAdmin.Controllers
             }
 
             return Json(new { result = result, menssaje = menssaje }, JsonRequestBehavior.AllowGet);
+        }
+
+        [HttpPost]
+        public JsonResult EliminateUseers(int id) //Va a guardar y editar un usuario este metodo
+        {
+            bool eliminate = false;
+            string menssaje = string.Empty;
+
+            eliminate = new CN_Useers().Eliminate(id, out menssaje);
+
+            return Json(new { result = eliminate, menssaje = menssaje }, JsonRequestBehavior.AllowGet);
         }
     }
 }
