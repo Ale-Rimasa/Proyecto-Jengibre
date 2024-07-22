@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CD_Category.cs" />
+    <Compile Include="CD_Mark.cs" />
     <Compile Include="CD_Useers.cs" />
     <Compile Include="Conection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

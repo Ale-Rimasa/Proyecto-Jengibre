@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CN_Category.cs" />
+    <Compile Include="CN_Mark.cs" />
     <Compile Include="CN_Resource.cs" />
     <Compile Include="CN_Useers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
