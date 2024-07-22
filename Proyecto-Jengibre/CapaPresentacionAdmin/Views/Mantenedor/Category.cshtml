@@ -23,7 +23,7 @@
 
         <table id="table" class="display cell-border" style="width:100%">
             <thead>
-                <tr>                    
+                <tr>
                     <th>Descripcion</th>
                     <th>Activo</th>
                     <th></th>
@@ -50,11 +50,11 @@
 
                 <input type="text" id="txtID" value="0" />
 
-                <div class="row g-1">                    
+                <div class="row g-1">
 
                     <div class="col-sm-6">
                         <label for="txtDescripcion" class="form-label">Descripcion</label>
-                        <input type="text" class="form-control" id="txtDescripcion"  autocomplete="off">
+                        <input type="text" class="form-control" id="txtDescripcion" autocomplete="off">
                     </div>
 
                     <div class="col-sm-6">
@@ -101,7 +101,7 @@
                 type: "GET",
                 dataType: "json"
             },
-            "columns": [           
+            "columns": [
                 { "data": "DescriptionCategory" },
                 {
                     "data": "Active", "render": function (valor) {
@@ -130,8 +130,8 @@
         });
 
         function OpenModal(json) {
-            
-            //Me va a limpiar los valores 1ro            
+
+            //Me va a limpiar los valores 1ro
             $("#txtID").val(0)
             $("#txtDescripcion").val("")
             $("#cboActive").val(1);
@@ -180,11 +180,11 @@
                 dataType: "json",
                 contentType: "application/json; charset=utf-8",
                 success: function (data) {              //Data: representa = { resultado = result, menssaje }
-                    debbuger;
 
                     if (data.result) {
 
-                        tabladata.row(CategorySelected).remove().draw();
+                        tabladata.row(CategorySelected).remove().draw(false);
+                        
                     }
                     else {
                         swal("No se puede eliminar", data.menssaje, "Error")
@@ -196,7 +196,7 @@
 
             });
 
-        });
+          });
             console.log(data)
         })
 
@@ -218,13 +218,13 @@
                 contentType: "application/json; charset=utf-8",
                 success: function (data) {              //Data: representa = { resultado = result, menssaje }
 
-                    $("modal-body").LoadingOverlay("hide");
+                    $(".modal-body").LoadingOverlay("hide");
                     //Categoria Nuevo
-                    if (User.ID_Category == 0) {
+                    if (Category.ID_Category == 0) {
 
                         if (data.result != 0) {
 
-                            User.ID_Category = data.result;
+                            Category.ID_Category = data.result;
                             tabladata.row.add(Category).draw(false);
                             $("#FormModal").modal("hide");
                         }

@@ -200,7 +200,7 @@
 
                     if (data.result) {
 
-                        tabladata.row(UserSelected).remove().draw();
+                        tabladata.row(UserSelected).remove().draw(false);
                     }
                     else {
                         swal("No se puede eliminar", data.menssaje, "Error")
@@ -239,7 +239,7 @@
                 contentType: "application/json; charset=utf-8",
                 success: function (data) {              //Data: representa = { resultado = result, menssaje }
 
-                    $("modal-body").LoadingOverlay("hide");
+                    $(".modal-body").LoadingOverlay("hide");
                     //Usuario Nuevo
                     if (User.ID_User == 0) {
 

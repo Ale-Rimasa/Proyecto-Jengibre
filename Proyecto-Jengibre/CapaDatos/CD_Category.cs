@@ -60,7 +60,7 @@ namespace CapaDatos
                 using (SqlConnection oconection = new SqlConnection(Conection.cn))
                 {
                     SqlCommand cmd = new SqlCommand("sp_RegistrerCategory", oconection);
-                    cmd.Parameters.AddWithValue("@DescriptionCateogry", obj.DescriptionCategory);
+                    cmd.Parameters.AddWithValue("@DescriptionCategory", obj.DescriptionCategory);
                     cmd.Parameters.AddWithValue("Active", obj.Active);
                    
                     cmd.Parameters.Add("Resultado", SqlDbType.Int).Direction = ParameterDirection.Output;
@@ -94,7 +94,7 @@ namespace CapaDatos
                 {
                     SqlCommand cmd = new SqlCommand("sp_EditCategory", oconection);
                     cmd.Parameters.AddWithValue("ID_Category", obj.ID_Category);
-                    cmd.Parameters.AddWithValue("DescriptionCateogry", obj.DescriptionCategory);                  
+                    cmd.Parameters.AddWithValue("DescriptionCategory", obj.DescriptionCategory);                  
                     cmd.Parameters.AddWithValue("Active", obj.Active);
                     cmd.Parameters.Add("Resultado", SqlDbType.Bit).Direction = ParameterDirection.Output;
                     cmd.Parameters.Add("Mensaje", SqlDbType.VarChar, 500).Direction = ParameterDirection.Output;
